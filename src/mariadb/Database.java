@@ -8,13 +8,13 @@ public class Database {
         static final String DB_URL = "jdbc:mariadb://localhost:3306/";
 
         //  Database credentials
-        static final String USER = "root";
-        static final String PASS = "Firefly";
+        static final String USER = ""; //FIXME ADD IN YOUR USERNAME FOR MARIADB.
+        static final String PASS = ""; //FIXME ADD IN YOUR PASSWORD FOR MARIADB.
 
         Connection conn = null;
         ResultSet rs = null;
         Statement stmt = null;
-        String dbName = "CL_Lists";
+        String dbName = "CL_Lists"; //NOTE: This is the default name of the database created and used. You can rename it if you wish.
 
         public void connect() throws SQLException, ClassNotFoundException {
             try {
